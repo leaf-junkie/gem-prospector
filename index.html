@@ -39,25 +39,25 @@
             <div class="container row">
                 <div class="card-deck">
                     <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <img src="assets/images/diamond.jpg" class="card-img-top" alt="gem-one">
+                        <img src="assets/images/diamond.jpg" class="card-img-top" alt="Diamond">
                         <div class="card-footer">
                         <button type="button" id="gemA" class="btn btn-secondary gems" value="">Diamond</button>
                         </div>
                     </div>
                     <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <img src="assets/images/sapphire.jpg" class="card-img-top" alt="gem-two">
+                        <img src="assets/images/sapphire.jpg" class="card-img-top" alt="Sapphire">
                         <div class="card-footer">
                         <button type="button" id="gemB" class="btn btn-secondary gems" value="">Sapphire</button>
                         </div>
                     </div>
                     <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <img src="assets/images/emeralds.jpg" class="card-img-top" alt="gem-four">
+                        <img src="assets/images/emeralds.jpg" class="card-img-top" alt="Emerald">
                         <div class="card-footer">
                         <button type="button" id="gemD" class="btn btn-secondary gems" value="">Emerald</button>
                         </div>
                     </div>
                     <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                        <img src="assets/images/ruby.jpg" class="card-img-top" alt="gem-three">
+                        <img src="assets/images/ruby.jpg" class="card-img-top" alt="Ruby">
                         <div class="card-footer">
                         <button type="button" id="gemC" class="btn btn-secondary gems" value="">Ruby</button>
                         </div>
@@ -69,35 +69,35 @@
             <div class="container">
                 <div class="scoreBoard">
                     <div class="score">
-                        <h2><span id="currentScore">0</span></h2>
+                        <h2>$<span id="currentScore">0</span></h2>
                     </div>
                     <div>
-                        <h3>Goal: <span id="goal"> - </span></h3>
+                        <p>Client's price: $<span id="goal"> - </span></p>
                     </div>
-                    <div id="wins">
-                        <h3>Wins: <span id="winCount">0</span></h3>
-                    </div>
-                    <div id="losses">
-                        <h3>Losses: <span id="lossCount">0</span></h3>
+                    <div class="muted trackRecord">
+                        <p>Wins: <span id="winCount">0</span></p>
+                        <p>Losses: <span id="lossCount">0</span></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- MODAL -->
-        <div class="modal modal-backdrop fade show" id="playModal" data-backdrop="true" 
+        <div class="modal fade show" id="playModal" data-backdrop="true" 
         data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLiveLabel" 
         style="display: block; padding-right: 17px;" aria-modal="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLiveLabel">Instructions</h5>
-                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button> -->
+                  <h3 class="modal-title text-secondary">We need your help appraising these gems!</h3>
                 </div>
                 <div class="modal-body">
-                  <p>Each gem has been assigned an unknown value. The value can be determined by examining each gem. Appraise the gems to match the given number!</p>
+                    <p class="text-justify text-dark">
+                        Our client wants to spend a certain amount on gems, so it's up to you to 
+                        mix and match gems until you match our client's price. You can appraise a 
+                        gem by clicking on it to determine its value. Be careful not to go over 
+                        the set price, or they'll spend their money elsewhere!
+                    </p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Play</button>
@@ -106,10 +106,9 @@
             </div>
           </div>
 
-        <!-- FOOTER -->
-            <footer>
-                <p class="footer-text">© Julie Ragsdale 2019</p>
-            </footer>
+        <footer>
+            <p class="footer-text">© Julie Ragsdale 2019</p>
+        </footer>
         
         <!-- Links to jQuery, Popper.js, and JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

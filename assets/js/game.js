@@ -17,8 +17,9 @@ $(document).ready(function() {
 
     // Click handler for modal play button
     $(".modal .modal-footer .btn").on("click", ()=> {
-        $("#playModal").css("display: none;");
-        $("#playModal").removeClass("show");
+        $("#playModal").remove();
+        // $("#playModal").css("display: none;");
+        // $("#playModal").removeClass("show");
     });
 
     // $('#winCount').text(wins);

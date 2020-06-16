@@ -20,9 +20,15 @@ header {
     font-size: 100px;
 }
 
-/* .modal-content {
-    background: rgb(255, 255, 255, 1) !important;
-} */
+.modal-header {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.modal-body {
+    font-size: 24px;
+    line-height: 150%;
+}
 
 .container {
     width: 100%;
@@ -34,6 +40,10 @@ header {
     margin-bottom: 4vh;
 }
 
+.card {
+    padding: 0;
+}
+
 .card-footer {
     padding: 0;
 }
@@ -41,22 +51,33 @@ header {
 .btn {
     width: 100%;
     margin: 0 auto;
-    font-size: 22px;
-    -webkit-text-stroke-width: 1.5px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .scoreBoard {
-    font-family: 'Bungee Hairline', monospace;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: #343a40;
     border: 1px solid #fff;
     text-align: center;
-    padding: 15px;
-    width: 30%;
+    padding: 30px;
+    width: 50%;
     margin: 0 auto;
     font-size: 28px;
     line-height: 150%;
-    -webkit-text-stroke-width: 1.5px;
+    border-radius: 15px;
+}
+
+.trackRecord {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.muted > p {
+    color: #c5c5c5;
 }
 
 .score {
