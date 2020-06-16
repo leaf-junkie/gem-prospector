@@ -26,7 +26,7 @@
     <body>
 
         <!-- HEADER -->
-        <nav class="navbar navbar-dark bg-dark jumbotron">
+        <nav class="navbar navbar-dark bg-dark">
             <header>
                 <h1>Gem Prospector</h1>
             </header>
@@ -34,6 +34,18 @@
 
         <!-- MAIN CONTENT -->
         <div class="container">
+            <span class="badge badge-success">Wins: <span id="winCount">0</span></span>
+            <span class="badge badge-danger">Losses: <span id="lossCount">0</span></span>
+
+            <!-- SCORE -->
+            <div class="container">
+                <div class="scoreBoard">
+                    <div class="score">
+                        <h2>$<span id="currentScore">0</span></h2>
+                    </div>
+                    <p class="muted">Client's price: $<span id="goal"> - </span></p>
+                </div>
+            </div>
 
             <!-- GEMS -->
             <div class="container row">
@@ -65,21 +77,6 @@
                 </div>
             </div>
 
-            <!-- SCORE -->
-            <div class="container">
-                <div class="scoreBoard">
-                    <div class="score">
-                        <h2>$<span id="currentScore">0</span></h2>
-                    </div>
-                    <div>
-                        <p>Client's price: $<span id="goal"> - </span></p>
-                    </div>
-                    <div class="muted trackRecord">
-                        <p>Wins: <span id="winCount">0</span></p>
-                        <p>Losses: <span id="lossCount">0</span></p>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- MODAL -->
@@ -107,7 +104,7 @@
           </div>
 
         <footer>
-            <p class="footer-text">© Julie Ragsdale 2019</p>
+            <p class="footer-text muted">© Julie Ragsdale 2019</p>
         </footer>
         
         <!-- Links to jQuery, Popper.js, and JavaScript -->

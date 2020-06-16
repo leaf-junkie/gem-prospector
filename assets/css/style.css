@@ -13,11 +13,11 @@ header {
     text-align: center;
 }
 
-.jumbotron {
+.navbar {
     background-color: #343a40;
     color: #fff;
     font-family: 'Ewert';
-    font-size: 100px;
+    font-size: 82px;
 }
 
 .modal-header {
@@ -63,27 +63,19 @@ header {
     text-align: center;
     padding: 30px;
     width: 50%;
-    margin: 0 auto;
-    font-size: 28px;
+    margin: 3vh auto;
+    font-size: 20px;
     line-height: 150%;
     border-radius: 15px;
 }
 
-.trackRecord {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 4vh;
-}
-
-.muted > p {
+.muted {
     color: #c5c5c5;
 }
 
 .score {
     font-size: 60px;
     padding: 25px;
-    margin-bottom: 15px;
     border-bottom: 0.5px solid #aaa;
 }
 
@@ -96,32 +88,23 @@ footer {
 }
 
 .footer-text {
-    color: #ebebeb;
     text-align: center;
     padding: 20px;
 }
 
 /* Media queries for portrait smartphones */
-@media screen and (max-width: 768px) and (orientation: portrait){
-    body {
-        background-image: none;
-        background-color: #aaa;
-    }
-    
+@media screen and (max-width: 768px) and (orientation: portrait){    
     header {
         width: device-width;
     }
 
-    .jumbotron {
+    .navbar {
         font-size: 36px;
-    }
-
-    .container {
-        float: left;
     }
 
     .card-deck {
         display: unset;
+        margin-bottom: 6vh;
     }
 
     .card{
@@ -132,7 +115,7 @@ footer {
 
     .scoreBoard {
         width: 100%;
-        margin-bottom: 6rem;
+        margin-bottom: 1vh;
     }
 }
 
