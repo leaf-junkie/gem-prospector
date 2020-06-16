@@ -1,22 +1,18 @@
-/* Apply custom background and font to site */
 body {
-    background-image: url(../images/rocky.jpg);
-    font-family: 'Bungee Hairline', monospace !important;
+    background: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
-/* Center header and make as wide as browser */
 header {
     width: 100%;
     margin: 0 auto;
     }
 
-/* Center navbar text and give border */
 .navbar {
     text-align: center;
-    border-bottom: 1px solid #fff;
 }
 
-/* Personalize Bootstrap's jumbotron class */
 .jumbotron {
     background-color: #343a40;
     color: #fff;
@@ -24,30 +20,24 @@ header {
     font-size: 100px;
 }
 
-/* Style text  in header under "Gem Prospector" */
-.instructions {
-    font-family: 'Bungee Hairline', monospace;
-    -webkit-text-stroke-width: 1.5px;
-    font-size: 28px;
-    margin-top: 40px;
-}
+/* .modal-content {
+    background: rgb(255, 255, 255, 1) !important;
+} */
 
-/* Style container holding main content */
 .container {
     width: 100%;
     margin: 0 auto;
 }
 
-.card-group {
-    margin-bottom: 40px;
+.card-deck {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
-/* Remove padding from card footer around buttons */
 .card-footer {
     padding: 0;
 }
 
-/* Make button width span card and center */
 .btn {
     width: 100%;
     margin: 0 auto;
@@ -55,7 +45,6 @@ header {
     -webkit-text-stroke-width: 1.5px;
 }
 
-/* Style div holding all score values */
 .scoreBoard {
     font-family: 'Bungee Hairline', monospace;
     color: #fff;
@@ -70,7 +59,6 @@ header {
     -webkit-text-stroke-width: 1.5px;
 }
 
-/* Style content inside scoreBoard class */
 .score {
     font-size: 60px;
     padding: 25px;
@@ -78,7 +66,6 @@ header {
     border-bottom: 0.5px solid #aaa;
 }
 
-/* Style footer div */
 footer {
     background-color: #343a40;
     position: fixed;
@@ -87,10 +74,8 @@ footer {
     right: 0;
 }
 
-/* Style text inside footer */
 .footer-text {
-    color: #fff;
-    border-top: 1px solid #fff;
+    color: #ebebeb;
     text-align: center;
     padding: 20px;
 }
@@ -114,7 +99,7 @@ footer {
         float: left;
     }
 
-    .card-group {
+    .card-deck {
         display: unset;
     }
 

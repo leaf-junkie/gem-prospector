@@ -29,9 +29,6 @@
         <nav class="navbar navbar-dark bg-dark jumbotron">
             <header>
                 <h1>Gem Prospector</h1>
-                <h4 class="instructions">Each gem has been assigned an unknown value</h4> 
-                <h4 class="instructions">The value can be determined by examining each gem</h4>
-                <h4 class="instructions">Appraise the gems to match the goal!</h4>
             </header>
         </nav>
 
@@ -39,30 +36,30 @@
         <div class="container">
 
             <!-- GEMS -->
-            <div class="container">
-                <div class="card-group">
-                    <div class="card">
+            <div class="container row">
+                <div class="card-deck">
+                    <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <img src="assets/images/diamond.jpg" class="card-img-top" alt="gem-one">
                         <div class="card-footer">
-                        <button type="button" id="gemA" class="btn btn-dark gems" value="">Diamond</button>
+                        <button type="button" id="gemA" class="btn btn-secondary gems" value="">Diamond</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <img src="assets/images/sapphire.jpg" class="card-img-top" alt="gem-two">
                         <div class="card-footer">
-                        <button type="button" id="gemB" class="btn btn-dark gems" value="">Sapphire</button>
+                        <button type="button" id="gemB" class="btn btn-secondary gems" value="">Sapphire</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <img src="assets/images/emeralds.jpg" class="card-img-top" alt="gem-four">
                         <div class="card-footer">
-                        <button type="button" id="gemD" class="btn btn-dark gems" value="">Emerald</button>
+                        <button type="button" id="gemD" class="btn btn-secondary gems" value="">Emerald</button>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card col-xs-6 col-sm-6 col-md-3 col-lg-3">
                         <img src="assets/images/ruby.jpg" class="card-img-top" alt="gem-three">
                         <div class="card-footer">
-                        <button type="button" id="gemC" class="btn btn-dark gems" value="">Ruby</button>
+                        <button type="button" id="gemC" class="btn btn-secondary gems" value="">Ruby</button>
                         </div>
                     </div>
                 </div>
@@ -87,6 +84,28 @@
             </div>
         </div>
 
+        <!-- MODAL -->
+        <div class="modal modal-backdrop fade show" id="playModal" data-backdrop="true" 
+        data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLiveLabel" 
+        style="display: block; padding-right: 17px;" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLiveLabel">Instructions</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button> -->
+                </div>
+                <div class="modal-body">
+                  <p>Each gem has been assigned an unknown value. The value can be determined by examining each gem. Appraise the gems to match the given number!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <!-- FOOTER -->
             <footer>
                 <p class="footer-text">© Julie Ragsdale 2019</p>
@@ -98,6 +117,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         
         <!-- Link to JavaScript -->
-        <script src="assets/javascript/game.js"></script>
+        <script src="assets/js/game.js"></script>
     </body>
 </html>
